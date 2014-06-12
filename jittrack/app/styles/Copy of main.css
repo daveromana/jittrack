@@ -1,0 +1,138 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+	min-height: 100%;
+overflow: hidden;
+background-color: purple;
+height: 100%;
+position: absolute;
+width: 100%;
+}
+
+div.shadow{
+    background-color: lightblue;
+    border: 1px solid darkCyan;
+    position: absolute;
+    z-index: 1000;
+    height:100%;
+}
+
+div.draggable{
+	background-color:grey;
+	position:absolute;
+	width:5px;
+	z-index: 1000;
+	height:100%
+}
+
+.header{
+	margin-bottom:0px;
+	height:50px;
+}
+.navbar-header:{
+	margin:5px 0px;
+}
+.footer{
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  position:absolute;
+  bottom:0px;
+  background-color: red;
+}
+.main{
+	overflow:hidden;
+	width:100%;
+	position:absolute;
+	top:50px;
+	bottom:50px;
+	padding-left:5px;
+}
+.content,.leftSidebar,.rightSidebar{
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+	position:relative;
+}
+.leftSidebar{
+	width:120px;
+	float:left;
+	background-color:orange;
+	overflow:hidden;
+}
+.content{
+    float:left;
+    background-color:green;
+}
+.rightSidebar{
+	width:120px;
+	float:right;
+	background-color:silver;
+	overflow:hidden;
+}
+.login{
+	width: 400px;
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #ddd;
+	border-style: solid;
+	border-radius: 4px;
+	box-shadow: none;
+	padding: 15px 10px;
+	margin-top:80px
+}
+.login-txt{
+	font-size: 18px;
+	font-weight: 700;
+	color: #bbb;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom:12px;
+}
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 35px;    
+}
+.left-inner-addon i.left {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.left-inner-addon i.left.lg {
+	padding: 16px 12px;
+	}
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 35px;    
+}
+.right-inner-addon i.right {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.messages .message .seperator{
+	
+}
+.messages .message .user{
+	float: left;
+	color: blue;
+	font-size: 12px
+}
+.messages .message .dateTime{
+    float: right;
+    font-size: 10px;
+    color: grey;
+}
+.messages .message .text{
+    clear:both;
+    font-size: 10px
+    
+}

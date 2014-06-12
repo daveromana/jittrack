@@ -1,0 +1,72 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.jng-scrollable {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto; 
+}
+
+.jng-nowrap {
+    white-space:nowrap;
+}
+
+.jng-sidebar {
+    position: fixed;
+    top: 0;
+    background-color: #eee;
+    display: none;
+}
+
+.jng-sidebar-main {
+    position: fixed;
+    top: 0;
+}
+
+.jng-adjust-small {
+    font-size: 10pt;
+    line-height: 20px;
+}
+
+.jng-adjust-medium {
+    font-size: 12pt;
+    line-height: 22px;
+}
+
+.jng-adjust-big {
+    font-size: 13pt;
+    line-height: 24px;
+}
+
+.jng-adjust-huge {
+    font-size: 18pt;
+    line-height: 24px;
+}
+
+.jng-smaller {
+    font-size: .9em;
+    line-height: .9em;
+}
+
+.jng-bigger {
+    font-size: 1.45em;
+    line-height: 1.45em;
+}
+

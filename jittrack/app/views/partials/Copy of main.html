@@ -1,0 +1,43 @@
+<div ng-include="'partials/navbar'"></div>
+<div class="main">    
+        <div class="leftSidebar">
+        <div>
+            Left Content
+        </div>
+        </div> 
+	    <div class="draggable" bound="parent" helper="clone" style="top:0px;left:120px" axis="x" on-dragged="dragLeft($diffPos)"></div>
+	    <div class="content">
+	        <div>    
+	           <h1>
+					'Allo, 'Allo <span ng-show="currentUser">{{ currentUser.name }}</span>!
+				</h1>
+				<p class="lead">
+					<img src="images/yeoman.png" alt="I'm Yeoman"><br> Always a
+					pleasure scaffolding your apps.
+				</p>
+				<p>
+					<a class="btn btn-lg btn-success" ng-href="#">Splendid!</a>
+				</p>
+				<button ng-click="toggleRight()">{{collapsedRight && 'Show Right' || 'Hide Right'}}</button>
+				<button ng-click="toggleLeft()">{{collapsedLeft && 'Show Left' || 'Hide Left'}}</button>
+             </div>
+			</div>
+		<div class="rightSidebar">Right Content</div>
+</div> 
+<div ng-include="'partials/footer'"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

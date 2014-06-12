@@ -1,0 +1,51 @@
+/*
+    Components: navbar, logo and content header
+-------------------------------------------------
+*/
+
+body .footer {
+    position: absolute;
+    height: 40px;   
+    z-index: 1030;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    
+}
+
+//Control navbar scaffolding on x-small screens
+@media (max-width: @screen-sm) {
+    .navbar .navbar-nav > li {
+        float: left;
+    }
+    //Dont't let links get full width
+    .navbar-nav {
+        margin: 0;
+        float: left;
+    }
+
+    
+}
+
+// Collapse header 
+@media screen and (max-width: @screen-header-collapse) {
+    body  .footer {
+        position: relative;
+        .navbar {
+            width: 100%;
+            float: none;
+            position: relative!important;
+        }
+        .navbar {
+            margin: 0;
+        }
+
+    }
+
+    body.fixed {
+        > .footer {
+            position: fixed;
+        }
+    }
+
+}
