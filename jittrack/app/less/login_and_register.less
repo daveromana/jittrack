@@ -1,6 +1,54 @@
 /* 
     Page: register and login
 */
+.login{
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 15px 10px;
+    margin: 90px auto 0 auto;
+    .header {
+        background: @olive;
+        box-shadow: inset 0px -3px 0px rgba(0,0,0,0.2);
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom:12px;
+    }
+    .left-inner-addon {
+        position: relative;
+        input {
+            padding-left: 35px;    
+        }
+        i.left {
+           position: absolute;
+           padding: 10px 12px;
+           pointer-events: none;
+        }
+        i.left.lg {
+            padding: 16px 12px;
+        }
+    }
+    .right-inner-addon {
+        position: relative;
+        input {
+           padding-right: 35px;    
+        }
+        i.right {
+            position: absolute;
+            right: 0px;
+            padding: 10px 12px;
+            pointer-events: none;
+        }
+    }
+}
+
 
 .form-box {    
     width: 360px;
